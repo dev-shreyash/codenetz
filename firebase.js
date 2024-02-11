@@ -532,23 +532,3 @@ form.addEventListener("submit", addCode);
   
 
 //comment page
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBMNmVDhM4Okni4gqo1PPaC4nsFj2gXwBQ",
-  authDomain: "codenetz.firebaseapp.com",
-  projectId: "codenetz",
-  storageBucket: "codenetz.appspot.com",
-  messagingSenderId: "627481764210",
-  appId: "1:627481764210:web:d9d1c62fbdc2e827857deb",
-  measurementId: "G-W09YCFDTN3"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
