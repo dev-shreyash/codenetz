@@ -135,7 +135,8 @@ function searchPrograms() {
       const name = programs[i].getElementsByClassName("dis-your-name")[0].innerHTML;
       const title = programs[i].getElementsByClassName("dis-program-name")[0].innerHTML;
       const language = programs[i].getElementsByClassName("dis-program-language")[0].innerHTML;
-      const programText = `${name} ${title} ${language}`;
+      const code = programs[i].getElementByClassName("dis-program-code")[0].innerHTML;
+      const programText = `${name} ${title} ${language} ${code}`;
 
       // Check if the program text contains the search phrase
       if (programText.toUpperCase().includes(searchInputValue.toUpperCase())) {
