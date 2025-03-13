@@ -1,0 +1,17 @@
+# Install httr if not already installed
+install.packages("httr")
+
+# Load the library
+library(httr)
+
+# Define the URL of the text file
+url <- "https://codenetz.web.app/practical1.txt"  # Ensure it starts with https://
+
+# Send GET request to fetch the file
+response <- GET(url)
+
+# Extract the content as text
+text_content <- content(response, as = "text", encoding = "UTF-8")
+
+# Print the text content
+print(text_content)
